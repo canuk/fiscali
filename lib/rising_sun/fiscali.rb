@@ -39,7 +39,7 @@ module RisingSun
     end
 
     def financial_year
-      self.month < start_month ? self.year - 1 : self.year
+      self.month < start_month ? self.year : self.year + 1
     end
 
     def beginning_of_financial_year
